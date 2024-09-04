@@ -6,10 +6,18 @@ describe('Test Explore Hrvyst Page', () => {
         ExploreHrvystPage.goTo();
     })
 
-    it('Validate all the contents on the Explore Hrvyst Page', () => {
+    it('Validate Page Title and Sub Heading', () => {
         ExploreHrvystPage.validatePageTitle();
-        ExploreHrvystPage.validatePageSubHeading();
+        ExploreHrvystPage.validatePageTitleSubHeading();
+    })
+
+    it('Validate all topic contents', () => {
         ExploreHrvystPage.validateAllTopicHeadings();
+        ExploreHrvystPage.validateAllTopicContents();
+    })
+
+    it ('Validate all topic content images', () => {
+        ExploreHrvystPage.validateAllImages();
     })
     
 })

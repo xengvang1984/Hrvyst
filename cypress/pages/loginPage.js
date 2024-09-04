@@ -33,9 +33,10 @@ class LoginPage {
             .click();
     }
 
-    // Looks like Login is integrated with Microsoft and will most likely need special handling. See link for examples:
+    // Looks like Login is integrated with Microsoft Authentication and will most likely need special handling. See link for examples:
     // https://docs.cypress.io/guides/end-to-end-testing/azure-active-directory-authentication
     login(username) {
+        /*
         cy.origin(MICROSOFT_LOGIN_PAGE_BASE_URL, {
             args: {
                 username,
@@ -46,6 +47,7 @@ class LoginPage {
             cy.get('input[type="submit"]').click();
             }
         )
+            */
     }
 
 }
